@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">50 methods, 5 failed,   45 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java....)">demoPageTitle(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(ja...)">invalidLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(ja...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(...)">lockedOutLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(ja...)">problemLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(ja...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java...)">validLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">demoPageTitle(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...)">demoPageTitle(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.l...)">demoPageTitle(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.l...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">demoPageTitle(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,...)">demoPageTitle(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">demoPageTitle(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">demoPageTitle(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">demoPageTitle(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="demoPageTitle(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...)">demoPageTitle(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">invalidLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">invalidLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Stri...)">invalidLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Stri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...)">invalidLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(jav...)">invalidLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(jav...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">invalidLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">invalidLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...)">invalidLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="invalidLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">invalidLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">lockedOutLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....)">lockedOutLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(j...)">lockedOutLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(j...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">lockedOutLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">lockedOutLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.St...)">lockedOutLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.St...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....)">lockedOutLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">lockedOutLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="lockedOutLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">lockedOutLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">problemLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">problemLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...)">problemLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">problemLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Stri...)">problemLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Stri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">problemLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">problemLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.problemLoginFlow(jav...)">problemLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.problemLoginFlow(jav...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="problemLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...)">problemLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.validLoginFlow(java....)">validLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.validLoginFlow(java....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">validLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">validLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">validLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...)">validLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">validLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String...)">validLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...)">validLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.yourcompany.SampleSauceTest" hash-for-method="validLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">validLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.yourcompany.SampleSauceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java....)">
+                  </a> <!-- demoPageTitle(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java....) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Swag Labs] but found [Error 400 Could not proxy https://www.saucedemo.com:443/ java.lang.RuntimeException: Couldn&apos;t establish SSL handshake. Try using trustAllSSLCertificates. Received fatal alert: handshake_failure]
+	at com.yourcompany.SampleSauceTest.demoPageTitle(SampleSauceTest.java:179)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(ja...)">
+                  </a> <!-- invalidLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(ja...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:170)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: user-name
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1142&apos;, ip: &apos;fe80:0:0:0:4fa:9ddc:f273:c531%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 17 more
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(...)">
+                  </a> <!-- lockedOutLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(...) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:202)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: user-name
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1142&apos;, ip: &apos;fe80:0:0:0:4fa:9ddc:f273:c531%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 17 more
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(ja...)">
+                  </a> <!-- problemLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(ja...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:194)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: user-name
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1142&apos;, ip: &apos;fe80:0:0:0:4fa:9ddc:f273:c531%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 17 more
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java...)">
+                  </a> <!-- validLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:186)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: user-name
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;SL-1142&apos;, ip: &apos;fe80:0:0:0:4fa:9ddc:f273:c531%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 17 more
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.yourcompany.SampleSauceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">
+                  </a> <!-- demoPageTitle(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...)">
+                  </a> <!-- demoPageTitle(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.l...)">
+                  </a> <!-- demoPageTitle(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.l...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">
+                  </a> <!-- demoPageTitle(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,...)">
+                  </a> <!-- demoPageTitle(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">
+                  </a> <!-- demoPageTitle(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">
+                  </a> <!-- demoPageTitle(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)">
+                  </a> <!-- demoPageTitle(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="demoPageTitle(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...)">
+                  </a> <!-- demoPageTitle(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...) -->
+                  <span class="method-name">demoPageTitle</span>
+                  <span class="parameters">(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">
+                  </a> <!-- invalidLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">
+                  </a> <!-- invalidLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Stri...)">
+                  </a> <!-- invalidLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Stri...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...)">
+                  </a> <!-- invalidLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(jav...)">
+                  </a> <!-- invalidLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(jav...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">
+                  </a> <!-- invalidLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">
+                  </a> <!-- invalidLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...)">
+                  </a> <!-- invalidLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)">
+                  </a> <!-- invalidLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">invalidLoginFlow</span>
+                  <span class="parameters">(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">
+                  </a> <!-- lockedOutLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....)">
+                  </a> <!-- lockedOutLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(j...)">
+                  </a> <!-- lockedOutLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(j...) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">
+                  </a> <!-- lockedOutLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">
+                  </a> <!-- lockedOutLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.St...)">
+                  </a> <!-- lockedOutLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.St...) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....)">
+                  </a> <!-- lockedOutLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">
+                  </a> <!-- lockedOutLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedOutLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)">
+                  </a> <!-- lockedOutLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...) -->
+                  <span class="method-name">lockedOutLoginFlow</span>
+                  <span class="parameters">(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">
+                  </a> <!-- problemLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">
+                  </a> <!-- problemLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...)">
+                  </a> <!-- problemLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">
+                  </a> <!-- problemLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Stri...)">
+                  </a> <!-- problemLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Stri...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">
+                  </a> <!-- problemLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)">
+                  </a> <!-- problemLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.problemLoginFlow(jav...)">
+                  </a> <!-- problemLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.problemLoginFlow(jav...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="problemLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...)">
+                  </a> <!-- problemLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...) -->
+                  <span class="method-name">problemLoginFlow</span>
+                  <span class="parameters">(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.validLoginFlow(java....)">
+                  </a> <!-- validLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.validLoginFlow(java....) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">
+                  </a> <!-- validLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">
+                  </a> <!-- validLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">
+                  </a> <!-- validLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...)">
+                  </a> <!-- validLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">
+                  </a> <!-- validLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String...)">
+                  </a> <!-- validLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...)">
+                  </a> <!-- validLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)">
+                  </a> <!-- validLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...) -->
+                  <span class="method-name">validLoginFlow</span>
+                  <span class="parameters">(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;100&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.yourcompany.SampleSauceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(50);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validLoginFlow')
+data.setCell(0, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(0, 3, 62284);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'problemLoginFlow')
+data.setCell(1, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(1, 3, 57055);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'problemLoginFlow')
+data.setCell(2, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(2, 3, 56942);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validLoginFlow')
+data.setCell(3, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(3, 3, 52937);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validLoginFlow')
+data.setCell(4, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(4, 3, 52854);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'problemLoginFlow')
+data.setCell(5, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(5, 3, 51686);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'problemLoginFlow')
+data.setCell(6, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(6, 3, 43643);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidLoginFlow')
+data.setCell(7, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(7, 3, 41032);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'lockedOutLoginFlow')
+data.setCell(8, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(8, 3, 40955);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'lockedOutLoginFlow')
+data.setCell(9, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(9, 3, 40718);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invalidLoginFlow')
+data.setCell(10, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(10, 3, 40305);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'lockedOutLoginFlow')
+data.setCell(11, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(11, 3, 39982);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'invalidLoginFlow')
+data.setCell(12, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(12, 3, 39931);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'lockedOutLoginFlow')
+data.setCell(13, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(13, 3, 37171);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validLoginFlow')
+data.setCell(14, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(14, 3, 36527);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'invalidLoginFlow')
+data.setCell(15, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(15, 3, 36427);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'demoPageTitle')
+data.setCell(16, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(16, 3, 35309);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'problemLoginFlow')
+data.setCell(17, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(17, 3, 34411);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'invalidLoginFlow')
+data.setCell(18, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(18, 3, 33250);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'demoPageTitle')
+data.setCell(19, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(19, 3, 32108);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validLoginFlow')
+data.setCell(20, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(20, 3, 29841);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'lockedOutLoginFlow')
+data.setCell(21, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(21, 3, 29447);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'lockedOutLoginFlow')
+data.setCell(22, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(22, 3, 28644);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'problemLoginFlow')
+data.setCell(23, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(23, 3, 26054);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'demoPageTitle')
+data.setCell(24, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(24, 3, 25540);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'invalidLoginFlow')
+data.setCell(25, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(25, 3, 25119);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'lockedOutLoginFlow')
+data.setCell(26, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(26, 3, 23871);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'invalidLoginFlow')
+data.setCell(27, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(27, 3, 23575);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'lockedOutLoginFlow')
+data.setCell(28, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(28, 3, 23301);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'lockedOutLoginFlow')
+data.setCell(29, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(29, 3, 22151);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'invalidLoginFlow')
+data.setCell(30, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(30, 3, 22027);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'problemLoginFlow')
+data.setCell(31, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(31, 3, 21838);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'problemLoginFlow')
+data.setCell(32, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(32, 3, 21743);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'demoPageTitle')
+data.setCell(33, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(33, 3, 21719);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'lockedOutLoginFlow')
+data.setCell(34, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(34, 3, 21425);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'invalidLoginFlow')
+data.setCell(35, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(35, 3, 20988);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'validLoginFlow')
+data.setCell(36, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(36, 3, 20962);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'validLoginFlow')
+data.setCell(37, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(37, 3, 19758);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'demoPageTitle')
+data.setCell(38, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(38, 3, 19609);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'validLoginFlow')
+data.setCell(39, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(39, 3, 19504);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'validLoginFlow')
+data.setCell(40, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(40, 3, 19422);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'validLoginFlow')
+data.setCell(41, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(41, 3, 19135);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'demoPageTitle')
+data.setCell(42, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(42, 3, 19066);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'problemLoginFlow')
+data.setCell(43, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(43, 3, 17925);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'invalidLoginFlow')
+data.setCell(44, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(44, 3, 17817);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'problemLoginFlow')
+data.setCell(45, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(45, 3, 17397);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'demoPageTitle')
+data.setCell(46, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(46, 3, 15151);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'demoPageTitle')
+data.setCell(47, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(47, 3, 13473);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'demoPageTitle')
+data.setCell(48, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(48, 3, 10966);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'demoPageTitle')
+data.setCell(49, 2, 'com.yourcompany.SampleSauceTest')
+data.setCell(49, 3, 7921);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 24 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.yourcompany.SampleSauceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">problemLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(ja...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.problemLoginFlow(jav...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">lockedOutLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(chrome, 76.0, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">demoPageTitle(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java....)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidLoginFlow(MicrosoftEdge, 18.17763, Windows 10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(ja...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Stri...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(j...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.validLoginFlow(java....)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.St...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(jav...)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.St...)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(firefox, 62.0, Windows 10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(firefox, 55.0, Windows 7, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(internet explorer, 11, Windows 8.1, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.l...)</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang....)</span>
+                <span class="method-start">4 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.String...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(firefox, 64, macOS 10.14, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.St...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginFlow(safari, 12, macOS 10.13, public void com.yourcompany.SampleSauceTest.invalidLoginFlow(java.lang.Stri...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.Strin...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">problemLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.problemLoginFlow(java.lang.Str...)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedOutLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.lockedOutLoginFlow(java.lang.S...)</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(chrome, 69.0, OS X 10.10, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">demoPageTitle(chrome, 70.0, OS X 10.11, public void com.yourcompany.SampleSauceTest.demoPageTitle(java.lang.String...)</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validLoginFlow(safari, 11.0, macOS 10.12, public void com.yourcompany.SampleSauceTest.validLoginFlow(java.lang.Stri...)</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">7925 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">10973 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">13476 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">15153 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">17398 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">17818 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">17926 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=FAILURE method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">19071 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">19142 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">19424 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">19506 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">19612 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">19767 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">20964 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">20995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">21426 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">21723 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">21743 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">21840 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">22027 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">22151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">23304 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">23582 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">23872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">25123 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">25541 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">26056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">28649 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">29449 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">29848 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">32117 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">33253 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=FAILURE method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">34412 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=demoPageTitle status=SUCCESS method=SampleSauceTest.demoPageTitle(java.lang.String,...)</span>
+                <span class="method-start">35317 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=FAILURE method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">36427 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=FAILURE method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">36527 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=FAILURE method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">37172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">39931 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">39982 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">40312 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">40725 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=lockedOutLoginFlow status=SUCCESS method=SampleSauceTest.lockedOutLoginFlow(java.la...)</span>
+                <span class="method-start">40963 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLoginFlow status=SUCCESS method=SampleSauceTest.invalidLoginFlow(java.lang.S...)</span>
+                <span class="method-start">41039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">43643 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">51686 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">52855 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">52945 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">56949 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=problemLoginFlow status=SUCCESS method=SampleSauceTest.problemLoginFlow(java.lang.S...)</span>
+                <span class="method-start">57063 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLoginFlow status=SUCCESS method=SampleSauceTest.validLoginFlow(java.lang.Strin...)</span>
+                <span class="method-start">62292 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

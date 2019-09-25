@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.yourcompany.SampleSauceTest
+-------------------------------------------------------------------------------
+Tests run: 50, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 64.094 sec <<< FAILURE! - in com.yourcompany.SampleSauceTest
+demoPageTitle(com.yourcompany.SampleSauceTest)  Time elapsed: 19.063 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Swag Labs] but found [Error 400 Could not proxy https://www.saucedemo.com:443/ java.lang.RuntimeException: Couldn't establish SSL handshake. Try using trustAllSSLCertificates. Received fatal alert: handshake_failure]
+	at com.yourcompany.SampleSauceTest.demoPageTitle(SampleSauceTest.java:179)
+
+problemLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 34.404 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:194)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.id: user-name
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1142', ip: 'fe80:0:0:0:4fa:9ddc:f273:c531%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:194)
+
+invalidLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 36.419 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:170)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.id: user-name
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1142', ip: 'fe80:0:0:0:4fa:9ddc:f273:c531%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:170)
+
+validLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 36.52 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:186)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.id: user-name
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1142', ip: 'fe80:0:0:0:4fa:9ddc:f273:c531%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:186)
+
+lockedOutLoginFlow(com.yourcompany.SampleSauceTest)  Time elapsed: 37.164 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:202)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.id: user-name
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'SL-1142', ip: 'fe80:0:0:0:4fa:9ddc:f273:c531%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
+Driver info: driver.version: unknown
+	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
+	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:202)
+
