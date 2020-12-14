@@ -1,175 +1,517 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.yourcompany.SampleSauceTest" time="64.094" tests="50" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.yourcompany.SampleSauceTest" time="34.036" tests="90" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.191-b12"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/kevinberg/demos/Java-TestNG-Selenium"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/alexgriffen/Demos/Java-TestNG-Demo/target/test-classes:/Users/alexgriffen/Demos/Java-TestNG-Demo/target/classes:/Users/alexgriffen/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/alexgriffen/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/alexgriffen/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/alexgriffen/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/alexgriffen/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/alexgriffen/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/alexgriffen/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/alexgriffen/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/alexgriffen/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/alexgriffen/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/alexgriffen/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/alexgriffen/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/alexgriffen/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/alexgriffen/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/alexgriffen/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/alexgriffen/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/alexgriffen/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/alexgriffen/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/alexgriffen/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/alexgriffen/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/alexgriffen/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/alexgriffen/.m2/repository/com/saucelabs/sauce_testng/2.1.25/sauce_testng-2.1.25.jar:/Users/alexgriffen/.m2/repository/com/saucelabs/sauce_java_common/2.1.25/sauce_java_common-2.1.25.jar:/Users/alexgriffen/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/alexgriffen/.m2/repository/com/saucelabs/saucerest/1.0.32/saucerest-1.0.32.jar:/Users/alexgriffen/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/alexgriffen/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/alexgriffen/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/alexgriffen/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/alexgriffen/.m2/repository/org/json/json/20090211/json-20090211.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/kevinberg/demos/Java-TestNG-Selenium"/>
-    <property name="java.runtime.version" value="1.8.0_191-b12"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/1f/1ztpjxws0m93f1ycmtvh014h0000gq/T/"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/alexgriffen/Demos/Java-TestNG-Demo/target/surefire/surefirebooter9198529146470150739.jar /Users/alexgriffen/Demos/Java-TestNG-Demo/target/surefire 2020-12-14T10-10-41_342-jvmRun1 surefire8091348071962096302tmp surefire_04268657226185843070tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/alexgriffen/Demos/Java-TestNG-Demo/target/test-classes:/Users/alexgriffen/Demos/Java-TestNG-Demo/target/classes:/Users/alexgriffen/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/alexgriffen/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/alexgriffen/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/alexgriffen/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/alexgriffen/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/alexgriffen/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/alexgriffen/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/alexgriffen/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/alexgriffen/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/alexgriffen/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/alexgriffen/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/alexgriffen/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/alexgriffen/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/alexgriffen/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/alexgriffen/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/alexgriffen/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/alexgriffen/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/alexgriffen/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/alexgriffen/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/alexgriffen/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/alexgriffen/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/alexgriffen/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/alexgriffen/.m2/repository/com/saucelabs/sauce_testng/2.1.25/sauce_testng-2.1.25.jar:/Users/alexgriffen/.m2/repository/com/saucelabs/sauce_java_common/2.1.25/sauce_java_common-2.1.25.jar:/Users/alexgriffen/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/alexgriffen/.m2/repository/com/saucelabs/saucerest/1.0.32/saucerest-1.0.32.jar:/Users/alexgriffen/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/alexgriffen/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/alexgriffen/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/alexgriffen/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/alexgriffen/.m2/repository/org/json/json/20090211/json-20090211.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/alexgriffen"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/alexgriffen/Demos/Java-TestNG-Demo"/>
+    <property name="file.separator" value="/"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.6.0/libexec/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/kevinberg/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/usr/local/Cellar/maven/3.6.0/libexec/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/alexgriffen/Demos/Java-TestNG-Demo/target/surefire/surefirebooter9198529146470150739.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.14.6"/>
-    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.6.0/libexec/lib/jansi-native"/>
-    <property name="user.home" value="/Users/kevinberg"/>
-    <property name="user.timezone" value="America/Denver"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_192-b12"/>
+    <property name="user.name" value="alexgriffen"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="kevinberg"/>
-    <property name="java.class.path" value="/usr/local/Cellar/maven/3.6.0/libexec/boot/plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_191"/>
-    <property name="java.ext.dirs" value="/Users/kevinberg/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/usr/local/Cellar/maven/3.6.0/libexec"/>
-    <property name="file.separator" value="/"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/alexgriffen/.m2/repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.io.tmpdir" value="/var/folders/ry/6_cvnq9x5ml6zl5xcdn72vm40000gp/T/"/>
+    <property name="java.version" value="1.8.0_192"/>
+    <property name="user.dir" value="/Users/alexgriffen/Demos/Java-TestNG-Demo"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/alexgriffen/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.192-b12"/>
+    <property name="java.ext.dirs" value="/Users/alexgriffen/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="7.917"/>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="10.966"/>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="13.468"/>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="15.145"/>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="19.063">
-    <failure message="expected [Swag Labs] but found [Error 400 Could not proxy https://www.saucedemo.com:443/ java.lang.RuntimeException: Couldn&apos;t establish SSL handshake. Try using trustAllSSLCertificates. Received fatal alert: handshake_failure]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Swag Labs] but found [Error 400 Could not proxy https://www.saucedemo.com:443/ java.lang.RuntimeException: Couldn't establish SSL handshake. Try using trustAllSSLCertificates. Received fatal alert: handshake_failure]
-	at com.yourcompany.SampleSauceTest.demoPageTitle(SampleSauceTest.java:179)
-</failure>
-    <system-out><![CDATA[WebDriverRemoteWebDriver: chrome on MAC (6626d987be0e41e8aff25e83fdc15c9e)
-SauceOnDemandSessionID=6626d987be0e41e8aff25e83fdc15c9e job-name=demoPageTitle
+  <testcase name="loginTestSalesforce1[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce1(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="19.519">
+    <system-out><![CDATA[WebDriverRemoteWebDriver: chrome on MAC (e9ac5adefce645349e24082941f483d2)
+SauceOnDemandSessionID=e9ac5adefce645349e24082941f483d2 job-name=loginTestSalesforce1
+WebDriverRemoteWebDriver: chrome on WINDOWS (0d56337246794770836ebe212a075951)
+SauceOnDemandSessionID=0d56337246794770836ebe212a075951 job-name=loginTestSalesforce1
+WebDriverRemoteWebDriver: chrome on MAC (345dd7997c9d4b5ebbe769422e442f22)
+SauceOnDemandSessionID=345dd7997c9d4b5ebbe769422e442f22 job-name=loginTestSalesforce7
+WebDriverRemoteWebDriver: chrome on WINDOWS (2329e65a691342839e2aafecc3574f95)
+SauceOnDemandSessionID=2329e65a691342839e2aafecc3574f95 job-name=loginTestSalesforce7
+WebDriverRemoteWebDriver: chrome on WINDOWS (7e21bfe33ec44dbc8d79b8b7e8a2c3eb)
+SauceOnDemandSessionID=7e21bfe33ec44dbc8d79b8b7e8a2c3eb job-name=loginTestSalesforce12
+WebDriverRemoteWebDriver: chrome on WINDOWS (650063e361b64549ae0d1d8d59a21ccc)
+SauceOnDemandSessionID=650063e361b64549ae0d1d8d59a21ccc job-name=loginTestSalesforce7
+WebDriverRemoteWebDriver: chrome on MAC (0778e47724cf49878963a7a6df38bb37)
+SauceOnDemandSessionID=0778e47724cf49878963a7a6df38bb37 job-name=loginTestSalesforce6
+WebDriverRemoteWebDriver: chrome on WINDOWS (16858f978c7143d39e40a075fdcc6157)
+SauceOnDemandSessionID=16858f978c7143d39e40a075fdcc6157 job-name=loginTestSalesforce4
+WebDriverRemoteWebDriver: chrome on WINDOWS (d1541347a99a4ac7b94e2f427cb4aa3a)
+SauceOnDemandSessionID=d1541347a99a4ac7b94e2f427cb4aa3a job-name=loginTestSalesforce5
+WebDriverRemoteWebDriver: chrome on WINDOWS (e16750c3b97b4712b98fe1bc25988bbe)
+SauceOnDemandSessionID=e16750c3b97b4712b98fe1bc25988bbe job-name=loginTestSalesforce6
+WebDriverRemoteWebDriver: chrome on WINDOWS (08b12464787c473587549a0c1b488739)
+SauceOnDemandSessionID=08b12464787c473587549a0c1b488739 job-name=loginTestSalesforce8
+WebDriverRemoteWebDriver: chrome on WINDOWS (6ab1b5404ac541c382b2bf9db65d0f9e)
+SauceOnDemandSessionID=6ab1b5404ac541c382b2bf9db65d0f9e job-name=loginTestSalesforce14
+WebDriverRemoteWebDriver: chrome on WINDOWS (cb81fd90319440c2b17f19bd7dd530fa)
+SauceOnDemandSessionID=cb81fd90319440c2b17f19bd7dd530fa job-name=loginTestSalesforce2
+WebDriverRemoteWebDriver: chrome on WINDOWS (d0af1f46ead44f6fb72cc79d94843d89)
+SauceOnDemandSessionID=d0af1f46ead44f6fb72cc79d94843d89 job-name=loginTestSalesforce0
+WebDriverRemoteWebDriver: chrome on WINDOWS (32a9eb998393415a841b0f11329a26b2)
+SauceOnDemandSessionID=32a9eb998393415a841b0f11329a26b2 job-name=loginTestSalesforce4
+WebDriverRemoteWebDriver: chrome on MAC (2ade2bf4b3514fc88a62154b27d30dd8)
+SauceOnDemandSessionID=2ade2bf4b3514fc88a62154b27d30dd8 job-name=loginTestSalesforce6
+WebDriverRemoteWebDriver: chrome on WINDOWS (82a28829700441c0a98196bae06dc8ed)
+SauceOnDemandSessionID=82a28829700441c0a98196bae06dc8ed job-name=loginTestSalesforce3
+WebDriverRemoteWebDriver: chrome on WINDOWS (b873fb2c3099411ca2b4ba3851c47618)
+SauceOnDemandSessionID=b873fb2c3099411ca2b4ba3851c47618 job-name=loginTestSalesforce13
+WebDriverRemoteWebDriver: chrome on WINDOWS (2a79774ccc534abda40fca1ec904390f)
+SauceOnDemandSessionID=2a79774ccc534abda40fca1ec904390f job-name=loginTestSalesforce6
+WebDriverRemoteWebDriver: chrome on WINDOWS (b3f80deacda64e7a9c48da3ec82f4947)
+SauceOnDemandSessionID=b3f80deacda64e7a9c48da3ec82f4947 job-name=loginTestSalesforce9
+WebDriverRemoteWebDriver: chrome on WINDOWS (55dd37c7a1854f57bd2302be5cffbea3)
+SauceOnDemandSessionID=55dd37c7a1854f57bd2302be5cffbea3 job-name=loginTestSalesforce4
+WebDriverRemoteWebDriver: chrome on WINDOWS (f1ff33f1d41e43578619674e00c8ba9c)
+SauceOnDemandSessionID=f1ff33f1d41e43578619674e00c8ba9c job-name=loginTestSalesforce9
+WebDriverRemoteWebDriver: chrome on WINDOWS (2efc82631cf94e7dae81ec067089ba44)
+SauceOnDemandSessionID=2efc82631cf94e7dae81ec067089ba44 job-name=loginTestSalesforce10
+WebDriverRemoteWebDriver: chrome on WINDOWS (55fd54492ae84bcbad28eaca9ba33097)
+SauceOnDemandSessionID=55fd54492ae84bcbad28eaca9ba33097 job-name=loginTestSalesforce8
+WebDriverRemoteWebDriver: chrome on MAC (bd755fb062a344b9b7e613e484580a59)
+SauceOnDemandSessionID=bd755fb062a344b9b7e613e484580a59 job-name=loginTestSalesforce0
+WebDriverRemoteWebDriver: chrome on MAC (c7fb431b2339431e9d3dc85405e1a134)
+SauceOnDemandSessionID=c7fb431b2339431e9d3dc85405e1a134 job-name=loginTestSalesforce4
+WebDriverRemoteWebDriver: chrome on MAC (1cf063e19708471a8aa84e43485b112f)
+SauceOnDemandSessionID=1cf063e19708471a8aa84e43485b112f job-name=loginTestSalesforce2
+WebDriverRemoteWebDriver: chrome on WINDOWS (305c8a76833d401b82d45c07b714497b)
+SauceOnDemandSessionID=305c8a76833d401b82d45c07b714497b job-name=loginTestSalesforce10
+WebDriverRemoteWebDriver: chrome on WINDOWS (1fd86f0e458a4a9fa6d8e4779837ca39)
+SauceOnDemandSessionID=1fd86f0e458a4a9fa6d8e4779837ca39 job-name=loginTestSalesforce6
+WebDriverRemoteWebDriver: chrome on WINDOWS (4a926a286879495bbfba3bf026df7d21)
+SauceOnDemandSessionID=4a926a286879495bbfba3bf026df7d21 job-name=loginTestSalesforce2
+WebDriverRemoteWebDriver: chrome on WINDOWS (4d7ab7d0df044e6daf62187f7ad06a2a)
+SauceOnDemandSessionID=4d7ab7d0df044e6daf62187f7ad06a2a job-name=loginTestSalesforce8
+WebDriverRemoteWebDriver: chrome on MAC (805b8ac82e91433a8206db1653cd3d69)
+SauceOnDemandSessionID=805b8ac82e91433a8206db1653cd3d69 job-name=loginTestSalesforce5
+WebDriverRemoteWebDriver: chrome on MAC (97762d0c94ba49c8877c6ffe1f520bf8)
+SauceOnDemandSessionID=97762d0c94ba49c8877c6ffe1f520bf8 job-name=loginTestSalesforce7
+WebDriverRemoteWebDriver: chrome on WINDOWS (ba286912cf1749f788917913e80cf884)
+SauceOnDemandSessionID=ba286912cf1749f788917913e80cf884 job-name=loginTestSalesforce1
+WebDriverRemoteWebDriver: chrome on MAC (5975a744762841a88f588e3e3e765711)
+SauceOnDemandSessionID=5975a744762841a88f588e3e3e765711 job-name=loginTestSalesforce13
+WebDriverRemoteWebDriver: chrome on WINDOWS (2a29dd6a37ee4fc7afdc8e6a4c9baae8)
+SauceOnDemandSessionID=2a29dd6a37ee4fc7afdc8e6a4c9baae8 job-name=loginTestSalesforce11
+WebDriverRemoteWebDriver: chrome on WINDOWS (72510438b93344089c7b62898291ef0e)
+SauceOnDemandSessionID=72510438b93344089c7b62898291ef0e job-name=loginTestSalesforce10
+WebDriverRemoteWebDriver: chrome on MAC (ae196c2b660240ef93160b6b6b805d0b)
+SauceOnDemandSessionID=ae196c2b660240ef93160b6b6b805d0b job-name=loginTestSalesforce14
+WebDriverRemoteWebDriver: chrome on WINDOWS (45a0d6240bf44cf3b8251fc5aef82ff6)
+SauceOnDemandSessionID=45a0d6240bf44cf3b8251fc5aef82ff6 job-name=loginTestSalesforce12
+WebDriverRemoteWebDriver: chrome on WINDOWS (cc03a664f62b433a8cfb344ac6a934e9)
+SauceOnDemandSessionID=cc03a664f62b433a8cfb344ac6a934e9 job-name=loginTestSalesforce9
+WebDriverRemoteWebDriver: chrome on WINDOWS (51979fd1209e49b691d20e78503fba14)
+SauceOnDemandSessionID=51979fd1209e49b691d20e78503fba14 job-name=loginTestSalesforce3
+WebDriverRemoteWebDriver: chrome on MAC (6ab71e71715a4cea9e9db57943086f21)
+SauceOnDemandSessionID=6ab71e71715a4cea9e9db57943086f21 job-name=loginTestSalesforce10
+WebDriverRemoteWebDriver: chrome on WINDOWS (2514827f428e4da699bf977ef7febece)
+SauceOnDemandSessionID=2514827f428e4da699bf977ef7febece job-name=loginTestSalesforce14
+WebDriverRemoteWebDriver: chrome on MAC (6c6874fb3c2a4a459d1925e759c28843)
+SauceOnDemandSessionID=6c6874fb3c2a4a459d1925e759c28843 job-name=loginTestSalesforce14
+WebDriverRemoteWebDriver: chrome on WINDOWS (0e9fed7248704c91af70745f73026954)
+SauceOnDemandSessionID=0e9fed7248704c91af70745f73026954 job-name=loginTestSalesforce5
+WebDriverRemoteWebDriver: chrome on WINDOWS (dd9a03f4d02447cab2a1235ade188e25)
+SauceOnDemandSessionID=dd9a03f4d02447cab2a1235ade188e25 job-name=loginTestSalesforce13
+WebDriverRemoteWebDriver: chrome on MAC (cf706e56a1d944938988c02bcd219304)
+SauceOnDemandSessionID=cf706e56a1d944938988c02bcd219304 job-name=loginTestSalesforce8
+WebDriverRemoteWebDriver: chrome on MAC (343c2b26d9d344689f9f36f627c8b48c)
+SauceOnDemandSessionID=343c2b26d9d344689f9f36f627c8b48c job-name=loginTestSalesforce12
+WebDriverRemoteWebDriver: chrome on MAC (addfd8b30db54a66a10190235837fd86)
+SauceOnDemandSessionID=addfd8b30db54a66a10190235837fd86 job-name=loginTestSalesforce5
+WebDriverRemoteWebDriver: chrome on WINDOWS (4cf72dcf05bb40dbba8ef726eaa225c8)
+SauceOnDemandSessionID=4cf72dcf05bb40dbba8ef726eaa225c8 job-name=loginTestSalesforce0
+WebDriverRemoteWebDriver: chrome on MAC (5bc295cc253945bcaa83d9547df3c455)
+SauceOnDemandSessionID=5bc295cc253945bcaa83d9547df3c455 job-name=loginTestSalesforce9
+WebDriverRemoteWebDriver: chrome on WINDOWS (67217b6d85814d5d87d299644aa858cf)
+SauceOnDemandSessionID=67217b6d85814d5d87d299644aa858cf job-name=loginTestSalesforce13
+WebDriverRemoteWebDriver: chrome on WINDOWS (253998b85a6b4c0ba5d8b64d0f501668)
+SauceOnDemandSessionID=253998b85a6b4c0ba5d8b64d0f501668 job-name=loginTestSalesforce11
+WebDriverRemoteWebDriver: chrome on MAC (265e2b20489f48cab63d0b50f8b0ea50)
+SauceOnDemandSessionID=265e2b20489f48cab63d0b50f8b0ea50 job-name=loginTestSalesforce5
+WebDriverRemoteWebDriver: chrome on MAC (b1b5678617d94a9580f51e37f03351f4)
+SauceOnDemandSessionID=b1b5678617d94a9580f51e37f03351f4 job-name=loginTestSalesforce9
+WebDriverRemoteWebDriver: chrome on MAC (082dd4b52ed249ca8d81d78e8c67303a)
+SauceOnDemandSessionID=082dd4b52ed249ca8d81d78e8c67303a job-name=loginTestSalesforce3
+WebDriverRemoteWebDriver: chrome on MAC (266b762b15c1472cb72ff57cd7d63e51)
+SauceOnDemandSessionID=266b762b15c1472cb72ff57cd7d63e51 job-name=loginTestSalesforce9
+WebDriverRemoteWebDriver: chrome on MAC (06a882b7e02242278e6ff769196152fe)
+SauceOnDemandSessionID=06a882b7e02242278e6ff769196152fe job-name=loginTestSalesforce11
+WebDriverRemoteWebDriver: chrome on WINDOWS (b9e74a8b80c840769be880e74f814a9a)
+SauceOnDemandSessionID=b9e74a8b80c840769be880e74f814a9a job-name=loginTestSalesforce12
+WebDriverRemoteWebDriver: chrome on MAC (d590c19063874476a8b964ef884aaebf)
+SauceOnDemandSessionID=d590c19063874476a8b964ef884aaebf job-name=loginTestSalesforce11
+WebDriverRemoteWebDriver: chrome on MAC (8e1219d931a4494cb229b476caab1b91)
+SauceOnDemandSessionID=8e1219d931a4494cb229b476caab1b91 job-name=loginTestSalesforce4
+WebDriverRemoteWebDriver: chrome on WINDOWS (085cf2fff13c403c84fd56bd6cb46062)
+SauceOnDemandSessionID=085cf2fff13c403c84fd56bd6cb46062 job-name=loginTestSalesforce11
+WebDriverRemoteWebDriver: chrome on MAC (c0215d5837e942f08d5f488ec1d1bbc7)
+SauceOnDemandSessionID=c0215d5837e942f08d5f488ec1d1bbc7 job-name=loginTestSalesforce12
+WebDriverRemoteWebDriver: chrome on MAC (fe349698221e42ab91fb6fe21633aca1)
+SauceOnDemandSessionID=fe349698221e42ab91fb6fe21633aca1 job-name=loginTestSalesforce8
+WebDriverRemoteWebDriver: chrome on MAC (0744f95b5bf9441cae993b6c7c4a621a)
+SauceOnDemandSessionID=0744f95b5bf9441cae993b6c7c4a621a job-name=loginTestSalesforce2
+WebDriverRemoteWebDriver: chrome on MAC (ef2e067b79cc4fc1922707bd38806ea9)
+SauceOnDemandSessionID=ef2e067b79cc4fc1922707bd38806ea9 job-name=loginTestSalesforce6
+WebDriverRemoteWebDriver: chrome on WINDOWS (5d54beccf0814471910f91a16f1245fd)
+SauceOnDemandSessionID=5d54beccf0814471910f91a16f1245fd job-name=loginTestSalesforce5
+WebDriverRemoteWebDriver: chrome on MAC (7bc830e0d93140c0b3572c295ba2762d)
+SauceOnDemandSessionID=7bc830e0d93140c0b3572c295ba2762d job-name=loginTestSalesforce1
+WebDriverRemoteWebDriver: chrome on MAC (e9043291d6f8410b820f2e2d8e807e24)
+SauceOnDemandSessionID=e9043291d6f8410b820f2e2d8e807e24 job-name=loginTestSalesforce12
+WebDriverRemoteWebDriver: chrome on MAC (da034146e1b54c96b0445a66b1d1aeef)
+SauceOnDemandSessionID=da034146e1b54c96b0445a66b1d1aeef job-name=loginTestSalesforce0
+WebDriverRemoteWebDriver: chrome on MAC (a9bd5282e54c4c85b5e4f4f70a695fda)
+SauceOnDemandSessionID=a9bd5282e54c4c85b5e4f4f70a695fda job-name=loginTestSalesforce14
+WebDriverRemoteWebDriver: chrome on MAC (3e071b17dfa847e7b9e32a3e8047c5c8)
+SauceOnDemandSessionID=3e071b17dfa847e7b9e32a3e8047c5c8 job-name=loginTestSalesforce11
+WebDriverRemoteWebDriver: chrome on MAC (b8000769bb6f4801b138ef010286ef27)
+SauceOnDemandSessionID=b8000769bb6f4801b138ef010286ef27 job-name=loginTestSalesforce0
+WebDriverRemoteWebDriver: chrome on MAC (3758c73965604a3092d59f382920ef37)
+SauceOnDemandSessionID=3758c73965604a3092d59f382920ef37 job-name=loginTestSalesforce3
+WebDriverRemoteWebDriver: chrome on MAC (1b7d0b2f60d54f6d869746a5dcf8027a)
+SauceOnDemandSessionID=1b7d0b2f60d54f6d869746a5dcf8027a job-name=loginTestSalesforce10
+WebDriverRemoteWebDriver: chrome on MAC (55a5d064aa7443d09707184e38feeb7c)
+SauceOnDemandSessionID=55a5d064aa7443d09707184e38feeb7c job-name=loginTestSalesforce7
+WebDriverRemoteWebDriver: chrome on MAC (49ef6b9a3a1f4d0f9c93b6a55a9c2ff9)
+SauceOnDemandSessionID=49ef6b9a3a1f4d0f9c93b6a55a9c2ff9 job-name=loginTestSalesforce13
+WebDriverRemoteWebDriver: chrome on MAC (978ea6f5432f49a495761b8ccaa2f1b5)
+SauceOnDemandSessionID=978ea6f5432f49a495761b8ccaa2f1b5 job-name=loginTestSalesforce4
+WebDriverRemoteWebDriver: chrome on MAC (734b53425bed40fd813872bddbcf560c)
+SauceOnDemandSessionID=734b53425bed40fd813872bddbcf560c job-name=loginTestSalesforce8
+WebDriverRemoteWebDriver: chrome on WINDOWS (98cc0941f8d84b6d8a74ef77983054a1)
+SauceOnDemandSessionID=98cc0941f8d84b6d8a74ef77983054a1 job-name=loginTestSalesforce0
+WebDriverRemoteWebDriver: chrome on WINDOWS (5bc0a84c1c52498f99d0c2913fe55f78)
+SauceOnDemandSessionID=5bc0a84c1c52498f99d0c2913fe55f78 job-name=loginTestSalesforce7
+WebDriverRemoteWebDriver: chrome on MAC (c4d70e6ce7594a48aa3daafb482a4a4f)
+SauceOnDemandSessionID=c4d70e6ce7594a48aa3daafb482a4a4f job-name=loginTestSalesforce10
+WebDriverRemoteWebDriver: chrome on MAC (0a1d1fdc82814ac2a9d455ec91ff9fe8)
+SauceOnDemandSessionID=0a1d1fdc82814ac2a9d455ec91ff9fe8 job-name=loginTestSalesforce3
+WebDriverRemoteWebDriver: chrome on WINDOWS (e403d1d416c24d0893a39049d3e8ce79)
+SauceOnDemandSessionID=e403d1d416c24d0893a39049d3e8ce79 job-name=loginTestSalesforce1
+WebDriverRemoteWebDriver: chrome on MAC (f2aef3d39c3f4604bc239d91d3b8bfa4)
+SauceOnDemandSessionID=f2aef3d39c3f4604bc239d91d3b8bfa4 job-name=loginTestSalesforce13
+WebDriverRemoteWebDriver: chrome on MAC (772c9b8932944a69af6f047c8370e0af)
+SauceOnDemandSessionID=772c9b8932944a69af6f047c8370e0af job-name=loginTestSalesforce1
+WebDriverRemoteWebDriver: chrome on WINDOWS (40f293837e5842a1896b0c4e5b653f32)
+SauceOnDemandSessionID=40f293837e5842a1896b0c4e5b653f32 job-name=loginTestSalesforce14
+WebDriverRemoteWebDriver: chrome on MAC (d58b8d2b0b344d5fa17805f3fc164d35)
+SauceOnDemandSessionID=d58b8d2b0b344d5fa17805f3fc164d35 job-name=loginTestSalesforce2
+WebDriverRemoteWebDriver: chrome on WINDOWS (2d8038d2e33b46dbb383236a935ee505)
+SauceOnDemandSessionID=2d8038d2e33b46dbb383236a935ee505 job-name=loginTestSalesforce3
+WebDriverRemoteWebDriver: chrome on WINDOWS (06726893a2a44cddaffe42bf9b0a395f)
+SauceOnDemandSessionID=06726893a2a44cddaffe42bf9b0a395f job-name=loginTestSalesforce2
 ]]></system-out>
-    <system-err><![CDATA[Sep 18, 2019 3:44:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
+    <system-err><![CDATA[Dec 14, 2020 10:10:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:52 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Dec 14, 2020 10:10:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="19.604"/>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="21.714"/>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="25.532"/>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="32.109"/>
-  <testcase name="demoPageTitle" classname="com.yourcompany.SampleSauceTest" time="35.309"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="17.39"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="17.918"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="21.735"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="21.832"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="26.047"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="34.404">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
-	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
-	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:194)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.id: user-name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SL-1142', ip: 'fe80:0:0:0:4fa:9ddc:f273:c531%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
-Driver info: driver.version: unknown
-	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
-	at com.yourcompany.SampleSauceTest.problemLoginFlow(SampleSauceTest.java:194)
-</failure>
-  </testcase>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="43.635"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="51.678"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="56.941"/>
-  <testcase name="problemLoginFlow" classname="com.yourcompany.SampleSauceTest" time="57.055"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="17.811"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="20.987"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="22.019"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="23.574"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="25.114"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="33.245"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="36.419">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
-	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
-	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:170)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.id: user-name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SL-1142', ip: 'fe80:0:0:0:4fa:9ddc:f273:c531%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
-Driver info: driver.version: unknown
-	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
-	at com.yourcompany.SampleSauceTest.invalidLoginFlow(SampleSauceTest.java:170)
-</failure>
-  </testcase>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="39.923"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="40.304"/>
-  <testcase name="invalidLoginFlow" classname="com.yourcompany.SampleSauceTest" time="41.031"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="19.134"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="19.416"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="19.498"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="19.758"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="20.956"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="29.84"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="36.52">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
-	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
-	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:186)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.id: user-name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SL-1142', ip: 'fe80:0:0:0:4fa:9ddc:f273:c531%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
-Driver info: driver.version: unknown
-	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
-	at com.yourcompany.SampleSauceTest.validLoginFlow(SampleSauceTest.java:186)
-</failure>
-  </testcase>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="52.847"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="52.937"/>
-  <testcase name="validLoginFlow" classname="com.yourcompany.SampleSauceTest" time="62.284"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="21.418"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="22.144"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="23.296"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="23.864"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="28.641"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="29.441"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="37.164">
-    <failure message="Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: user-name (tried for 15 second(s) with 500 milliseconds interval)
-	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
-	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:202)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.id: user-name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'SL-1142', ip: 'fe80:0:0:0:4fa:9ddc:f273:c531%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_191'
-Driver info: driver.version: unknown
-	at com.yourcompany.SampleSauceTest.login(SampleSauceTest.java:227)
-	at com.yourcompany.SampleSauceTest.lockedOutLoginFlow(SampleSauceTest.java:202)
-</failure>
-  </testcase>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="39.974"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="40.717"/>
-  <testcase name="lockedOutLoginFlow" classname="com.yourcompany.SampleSauceTest" time="40.955"/>
+  <testcase name="loginTestSalesforce6[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce6(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="20.189"/>
+  <testcase name="loginTestSalesforce3[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce3(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="20.586"/>
+  <testcase name="loginTestSalesforce5[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce5(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="20.812"/>
+  <testcase name="loginTestSalesforce6[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce6(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="21.095"/>
+  <testcase name="loginTestSalesforce2[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce2(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="21.147"/>
+  <testcase name="loginTestSalesforce4[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce4(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="21.383"/>
+  <testcase name="loginTestSalesforce8[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce8(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="21.425"/>
+  <testcase name="loginTestSalesforce6[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce6(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="21.583"/>
+  <testcase name="loginTestSalesforce12[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce12(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="21.658"/>
+  <testcase name="loginTestSalesforce12[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce12(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="21.719"/>
+  <testcase name="loginTestSalesforce8[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce8(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="21.824"/>
+  <testcase name="loginTestSalesforce9[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce9(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="22.027"/>
+  <testcase name="loginTestSalesforce11[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce11(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="22.076"/>
+  <testcase name="loginTestSalesforce7[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce7(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="22.328"/>
+  <testcase name="loginTestSalesforce8[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce8(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="22.717"/>
+  <testcase name="loginTestSalesforce1[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce1(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="22.723"/>
+  <testcase name="loginTestSalesforce10[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce10(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="22.913"/>
+  <testcase name="loginTestSalesforce5[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce5(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="23.196"/>
+  <testcase name="loginTestSalesforce7[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce7(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="23.209"/>
+  <testcase name="loginTestSalesforce0[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce0(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="23.294"/>
+  <testcase name="loginTestSalesforce10[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce10(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="23.384"/>
+  <testcase name="loginTestSalesforce5[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce5(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="23.51"/>
+  <testcase name="loginTestSalesforce12[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce12(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="23.587"/>
+  <testcase name="loginTestSalesforce2[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce2(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="23.772"/>
+  <testcase name="loginTestSalesforce0[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce0(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="23.872"/>
+  <testcase name="loginTestSalesforce14[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce14(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="23.958"/>
+  <testcase name="loginTestSalesforce12[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce12(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="24.07"/>
+  <testcase name="loginTestSalesforce8[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce8(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="24.095"/>
+  <testcase name="loginTestSalesforce14[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce14(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="24.716"/>
+  <testcase name="loginTestSalesforce0[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce0(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="24.779"/>
+  <testcase name="loginTestSalesforce9[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce9(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="24.845"/>
+  <testcase name="loginTestSalesforce11[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce11(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="24.845"/>
+  <testcase name="loginTestSalesforce4[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce4(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="24.879"/>
+  <testcase name="loginTestSalesforce6[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce6(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="24.91"/>
+  <testcase name="loginTestSalesforce9[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce9(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="25.204"/>
+  <testcase name="loginTestSalesforce5[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce5(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="25.32"/>
+  <testcase name="loginTestSalesforce6[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce6(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="25.362"/>
+  <testcase name="loginTestSalesforce14[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce14(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="25.397"/>
+  <testcase name="loginTestSalesforce7[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce7(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="25.399"/>
+  <testcase name="loginTestSalesforce2[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce2(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="25.519"/>
+  <testcase name="loginTestSalesforce3[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce3(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="25.671"/>
+  <testcase name="loginTestSalesforce13[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce13(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](1)" classname="com.yourcompany.SampleSauceTest" time="25.903"/>
+  <testcase name="loginTestSalesforce10[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce10(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="25.934"/>
+  <testcase name="loginTestSalesforce2[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce2(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="26.162"/>
+  <testcase name="loginTestSalesforce4[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce4(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="26.307"/>
+  <testcase name="loginTestSalesforce8[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce8(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="26.332"/>
+  <testcase name="loginTestSalesforce9[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce9(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="26.357"/>
+  <testcase name="loginTestSalesforce4[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce4(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="26.366"/>
+  <testcase name="loginTestSalesforce0[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce0(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="26.412"/>
+  <testcase name="loginTestSalesforce12[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce12(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="26.46"/>
+  <testcase name="loginTestSalesforce11[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce11(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="26.609"/>
+  <testcase name="loginTestSalesforce0[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce0(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="26.704"/>
+  <testcase name="loginTestSalesforce13[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce13(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](2)" classname="com.yourcompany.SampleSauceTest" time="26.867"/>
+  <testcase name="loginTestSalesforce11[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce11(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="26.889"/>
+  <testcase name="loginTestSalesforce13[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce13(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="26.946"/>
+  <testcase name="loginTestSalesforce2[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce2(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="27.004"/>
+  <testcase name="loginTestSalesforce10[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce10(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="27.052"/>
+  <testcase name="loginTestSalesforce1[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce1(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="27.114"/>
+  <testcase name="loginTestSalesforce13[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce13(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="27.233"/>
+  <testcase name="loginTestSalesforce5[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce5(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="27.407"/>
+  <testcase name="loginTestSalesforce1[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce1(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="27.453"/>
+  <testcase name="loginTestSalesforce9[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce9(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="27.554"/>
+  <testcase name="loginTestSalesforce10[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce10(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="27.65"/>
+  <testcase name="loginTestSalesforce8[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce8(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="27.813"/>
+  <testcase name="loginTestSalesforce10[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce10(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="27.846"/>
+  <testcase name="loginTestSalesforce7[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce7(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="27.863"/>
+  <testcase name="loginTestSalesforce7[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce7(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="27.936"/>
+  <testcase name="loginTestSalesforce14[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce14(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="27.945"/>
+  <testcase name="loginTestSalesforce5[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce5(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="27.952"/>
+  <testcase name="loginTestSalesforce13[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce13(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="28.001"/>
+  <testcase name="loginTestSalesforce4[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce4(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="28.158"/>
+  <testcase name="loginTestSalesforce6[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce6(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="28.195"/>
+  <testcase name="loginTestSalesforce3[latest-2, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce3(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](3)" classname="com.yourcompany.SampleSauceTest" time="28.226"/>
+  <testcase name="loginTestSalesforce3[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce3(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](4)" classname="com.yourcompany.SampleSauceTest" time="28.264"/>
+  <testcase name="loginTestSalesforce11[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce11(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="28.283"/>
+  <testcase name="loginTestSalesforce11[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce11(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="28.518"/>
+  <testcase name="loginTestSalesforce1[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce1(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="28.827"/>
+  <testcase name="loginTestSalesforce9[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce9(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="28.993"/>
+  <testcase name="loginTestSalesforce12[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce12(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="29.291"/>
+  <testcase name="loginTestSalesforce0[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce0(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="29.506"/>
+  <testcase name="loginTestSalesforce14[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce14(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="29.62"/>
+  <testcase name="loginTestSalesforce3[latest, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce3(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](5)" classname="com.yourcompany.SampleSauceTest" time="29.642"/>
+  <testcase name="loginTestSalesforce13[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce13(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="30.258"/>
+  <testcase name="loginTestSalesforce4[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce4(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="30.381"/>
+  <testcase name="loginTestSalesforce7[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce7(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="31.923"/>
+  <testcase name="loginTestSalesforce3[latest, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce3(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="32.389"/>
+  <testcase name="loginTestSalesforce14[latest-1, Windows 10, public void com.yourcompany.SampleSauceTest.loginTestSalesforce14(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="32.668"/>
+  <testcase name="loginTestSalesforce1[latest-2, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce1(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="32.942"/>
+  <testcase name="loginTestSalesforce2[latest-1, macOS 10.15, public void com.yourcompany.SampleSauceTest.loginTestSalesforce2(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception](6)" classname="com.yourcompany.SampleSauceTest" time="33.145"/>
 </testsuite>
